@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web Technology Lab</title>
+	<style>
+table,  td {
+  border: 3px solid black; height: 250px;
+  border-collapse: collapse;
+  font: serif;
+}
+
+ tbody{
+            font-size: larger; font-style: serif; text-align: left; 
+        }
+th{
+	 background-color: black;
+}
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	-webkit-animation: gradient 15s ease infinite;
+	        animation: gradient 15s ease infinite;
+}
+
+@-webkit-keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.posts-thumbnails img{
+	display: flex;
+	margin: 10px;
+}
+</style>
+
+
+</head>
+<body>
+	<center>
+		<h1 text-align = "centre"><img src="img/nitplogo.png" alt="logo"></h1>
+<table>
+	<thead>
+	<tr>
+		<th style="color: rgb(235, 164, 164); font: serif;">Name </th>
+		<th style="color: rgb(235, 164, 164); font: serif;;">Roll no. </th>
+		<th style="color: rgb(235, 164, 164); font: serif;">Branch </th>
+		<th style="color: rgb(235, 164, 164); font: serif;">Admitting Year</th>
+		<th style="color: rgb(235, 164, 164); font: serif;"> &nbsp;&nbsp;&nbsp;Passing Year</th>
+		<th style="color: rgb(235, 164, 164); font: serif;">&nbsp;&nbsp;&nbsp; Image of the student</th>
+	</tr>
+	</thead>
+	<tbody  >
+	<tr style="background-color:lightgray;">
+		<td style="color:black;"><b>Ashish Kumar</b></td>
+		<td style="color:black;"><b>2006061</b></td>
+		<td style="color:black;"><b>Computer Science & Engineering</b></td>
+		<td style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2020</b></td>
+		<td style="color:black;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2024</b></td>
+	<div class="posts-thumbnails">	<td><center><img style="float: left;"  src="https://git.io/JusNv" width="300px" style="background-color: burlywood" alt="Ashish Kumar's image"id="student" width="100px"  ></center></td></div>
+	</tr>
+	</tbody>
+</table>
+</center>
+</body> 
+</html>
