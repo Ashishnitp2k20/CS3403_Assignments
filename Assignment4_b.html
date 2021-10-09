@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Flex Property</title>
+	<style type="text/css">
+     body { 
+  height: 100vh;
+  text-align: center;
+  margin-top: 150px;
+  background-color: hsl(250,10%,55%);
+  background-color: teal;
+	}
+	body h1{
+		background: linear-gradient(45deg,lightcyan,gray);
+		padding: 10px;
+		width: 150px;
+		margin-left: 550px;
+		border-radius: 10px;
+		box-shadow: 0 10px 10px black;
+		transform: translateX(-500px);
+			transition: all 5.0s;
+	}
+	body h1:hover{
+		background: linear-gradient(45deg,deeppink,coral);
+		cursor: pointer;
+		transform: translateX(500px);
+	}
+	.column{
+		background: linear-gradient(#FEC3B4, #FF8C6F, #FF7A59);
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.column:hover{
+		background: linear-gradient(60deg,lightskyblue,coral);
+	}
+
+		.flex {
+  margin: 0;
+  display: flex;
+  border: 10px solid limegreen;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+.flex div:first-child {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+.flex div:last-child {
+  margin: 2rem;
+  flex: 2;
+}
+.flex h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  font-weight: 400;
+}
+.flex p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+.flex p:last-of-type {
+  margin-bottom: 0;
+}
+.flex:first-of-type div:first-child {
+  background-image: url("https://git.io/Jz46v") ;
+}
+	</style>
+</head>
+<body>
+	<h1>Flex Property</h1>
+	<div class="column">
+    <figure class="flex">
+          <div><img src="https://git.io/Jz46v" class="center" alt="NIT PATNA"></div>
+          <div>
+            <h3>NIT PATNA</h3>
+            <p>National Institute of Technology Patna is the 18th National Institute of Technology created by the Ministry of H.R.D. Government of India after rechristening the erstwhile Bihar College of Engineering Patna on 28. 01. 2004. NIT Patna marked its humble beginning in 1886 with the establishment of pleaders survey training school which was subsequently promoted of Bihar College of Engineering Patna in 1924. This made this institute the 6th Oldest Engineering Institute of India. The graduate level curriculum was later elevated to the post graduate level in 1978. The institute is situated on the south bank of holy river Ganges behind Gandhi Ghat, one of the most important and reverential place of Patna. The Gandhi Ghat is associated with the immersion of ashes of father of the Nation Mahatma Gandhi in the river Ganges. The campus has a picturesque river view with historic building presenting a spectacle of architectural delight and natural beauty.
+
+</p>
+          </div>
+    </figure>
+
+</div>
+
+	
+</body>
+</html>
