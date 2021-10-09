@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Border Box Demonstration</title>
+	<style>
+		body{
+			background: darkcyan no-repeat;
+			height: 100vh;
+			margin: 0;
+		}
+		body h2,p{
+			background: linear-gradient(90deg,darkorange,white,green);
+			text-align: center;
+			padding: 10px;
+			width: 95%;
+			margin-left: 10px;
+			margin-right: 10px; 
+		    border-radius: 15px;
+		}
+		body ol{
+			background: linear-gradient(45deg,coral,deeppink);
+			padding: 10px;
+			text-align: center;
+			width: 100%;
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+		body ol li{
+			padding: 15px;
+		}
+		.main-container{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.container{
+			width: 300px;
+			margin: 20px;
+			padding: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: 15px solid deeppink;
+			background-clip: content-box;
+            box-shadow: inset 0 0 0 15px lightskyblue;
+            background-clip:  padding-box;
+            background:  linear-gradient(#FEC3B4, #FF8C6F, #FF7A59);
+		}
+		#p-tag {
+			padding: 15px;
+			line-height: 25px;
+		}
+		#p-tag:hover{
+			background: linear-gradient(60deg,lightskyblue,coral);
+		}
+		h2:hover{
+			background: linear-gradient(60deg,lightskyblue,coral);
+		}
+		p:hover{
+			background: linear-gradient(60deg,lightskyblue,coral);
+		}
+	</style>
+</head>
+<body>
+	<h2>Demonstrating the Box Model</h2>
+
+    <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+
+	
+	<div class="main-container">
+		
+	
+	<div class="container">
+		<p>This is the space in Box-Model where the actual content we kept inside it and hence this is termed as Content.</p>
+		
+	</div>	
+	</div>
+	<p id="p-tag"><b>1. Padding is used to give space inside in box-model. Padding is defined in above box-model: linear-gradient(#FEC3B4, #FF8C6F, #FF7A59);<br>2. Border is visible outline of an element. Border is defined in above box-model: border: 15px solid deeppink; <br>3. and Margin is used to give space outside an element. Margin is defined after the border layer means outer area. 
+		</b></p>
+</body>
+</html>
