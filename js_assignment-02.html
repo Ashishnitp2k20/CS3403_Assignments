@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Java Script Assignment - 2</title>
+	<style type="text/css">
+		
+	body {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg,#3f51b5,#00bcd4,#27dcd9);
+}
+    h3{
+      color: #000;
+      padding: 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-family: 'popins',sans-serif;
+      background: linear-gradient(180deg,#df003c,#3f51b5);
+    }
+	</style>
+</head>
+<body>
+	<h3>Please open the devloper tools means do inspect and then click on console and then check the required output.</h3>
+	<script type="text/javascript">
+		function Person(fname, lname, office) {
+  this.firstName = fname;
+  this.lastName = lname;
+  this.officeAdress = office;
+}
+const details = new Person('firstName','lastName','officeAdress');
+const personOne = new Person('Ashish', 'Kumar', 'ISRO, Banglore');
+const personTwo = new Person('Rajan', 'Kumar','Cisco, Gurgaon');
+const personThree = new Person('Aditys','Raj','Wipro, Banglore');
+console.log(details.firstName+" "+details.lastName+" "+details.officeAdress);
+console.log(personOne.firstName+" "+personOne.lastName+" "+personOne.officeAdress);
+console.log(personTwo.firstName+" "+personTwo.lastName+" "+personTwo.officeAdress);
+console.log(personThree.firstName+" "+personThree.lastName+" "+personThree.officeAdress);
+	</script>
+</body>
+</html>
